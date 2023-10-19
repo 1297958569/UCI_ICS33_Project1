@@ -108,7 +108,8 @@ class DeviceSimulation:
         # End of simulation
         print(f'@{simulation_time}: END')
 
-    def read_input_file_path(self) -> Path:
+
+    def read_input_file_path() -> Path:
         input_file_path = Path(input())
         if not input_file_path.exists():
             print("FILE NOT FOUND")

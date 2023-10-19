@@ -80,7 +80,6 @@ class TestProject1(unittest.TestCase):
         self.assertIsInstance(input_file_path, Path)
         # Assert that the file exists
         self.assertTrue(input_file_path.is_file())
-
     def test_read_input_file_path_nonexistent_file(self):
         input_text = "samples/nonexistent_file.txt\n"
         sys.stdin = StringIO(input_text)
@@ -118,7 +117,6 @@ class TestProject1(unittest.TestCase):
         actual_output = sys.stdout.getvalue()
         # Assert that the actual output matches the expected output
         self.assertEqual(actual_output, expected_output)
-
 
 if __name__ == '__main__':
     unittest.main()
